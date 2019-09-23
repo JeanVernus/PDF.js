@@ -1,8 +1,18 @@
-export default class PDFTron {
+export default class Webviewer {
   init = (source, element) => {
-    new window.PDFTron.WebViewer({
+    this.viewer = new window.PDFTron.WebViewer({
       path: '/WebViewer/lib',
       initialDoc: source,
     }, element);
   }
+
+  rotate = (direction) => {
+    if(direction === 'clockwise') {
+      this.viewer.rotateClockwise();
+    } 
+    if (direction === 'rotateCounterClockwise'){
+      this.viewer.rotateCounterClockwise();
+    }
+  }
+
 }

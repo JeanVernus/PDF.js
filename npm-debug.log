@@ -4,7 +4,7 @@
 3 info using node@v8.10.0
 4 verbose config Skipping project config: /home/enigmhatik/.npmrc. (matches userconfig)
 5 verbose stack Error: ENOENT: no such file or directory, open '/home/enigmhatik/package.json'
-6 verbose cwd /home/enigmhatik/Bureau/bASEpROJETrEACT
+6 verbose cwd /home/enigmhatik/Bureau/PDF.js
 7 error Linux 4.15.0-64-generic
 8 error argv "/usr/bin/node" "/usr/bin/npm" "start"
 9 error node v8.10.0

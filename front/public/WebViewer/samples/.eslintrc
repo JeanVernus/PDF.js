@@ -13,7 +13,7 @@
   },
   "globals": {
     "PDFNet": true,
-    "PDFTron": true,
+    "PDFTron": false,
     "WebViewer": true,
     "saveBufferAsPNG": true,
     "saveBufferAsPDFDoc": true,

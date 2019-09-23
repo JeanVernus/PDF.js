@@ -2,3 +2,52 @@ html, body, #root, .App {
   width: 100%;
   height: 100%;
 }
+body{
+  background: rgb(140, 230, 230)
+}
+
+.App{
+  padding: 2em
+}
+
+.Title{
+  border: 2px ridge rgb(3, 65, 65);
+  background-color: #3EAEA5;
+  text-align: center;
+  color: white;
+  padding: 0.5em;
+  margin: auto;
+  width: 30%;
+}
+
+.Header{
+  display: flex;
+  justify-content: space-evenly;
+}
+.input{
+  max-width:70%
+}
+
+.displayViewer{
+  border: 2px ridge rgb(3, 65, 65);
+  box-shadow: 0px 15px 15px 5px black;
+  margin: auto;
+}
+.animButton{
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 2px 8px 0px rgba(10, 10, 10, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 10px 8px 0px rgb(10, 10, 10, 0.2);
+		transform: translatey(5px);
+	}
+	100% {
+		box-shadow: 0 2px 8px 0px rgba(10, 10, 10, 0.6);
+		transform: translatey(0px);
+  }
+}

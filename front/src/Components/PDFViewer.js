@@ -5,18 +5,29 @@ class PDFViewer extends Component {
     super(props);
     this.viewerRef = React.createRef();
     this.backend = new props.backend();
+    this.instance= null;
+    this.docViewer = null;
+    this.annotManager = null;
   }
 
   componentDidMount() {
     const { src } = this.props;
     const element = this.viewerRef.current;
-
     this.backend.init(src, element);
   }
   
+
+  rotate = (direction) => {
+    // être sur que le backend a implementer la même fonction
+    if (this.backend.rotate) {
+      this.backend.rotate(direction);
+    }
+  }
+
+
   render() {
     return (
-      <div ref={this.viewerRef} id='viewer' style={{ width: '100%', height: '100%' }}></div>
+      <div className="displayViewer" ref={this.viewerRef} id='viewer' style={{ width: '90%', height: '80%' }}></div>
     );
   }
 }
